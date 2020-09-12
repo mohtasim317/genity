@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
+import Tile from "./components/Tile";
 
 function App() {
   const [fetched, updateFetched] = useState(false);
@@ -22,23 +23,25 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <>
       {fetched ? (
-        <div>
+        <div className="main-container">
           <Header />
           {data.map((item, index) => {
             return (
-              <div>
-                <h1>{item.title}</h1>
-                <h2>{item.secondary}</h2>
-              </div>
+              <Tile
+                key={index}
+                title={item.title}
+                secondary={item.secondary}
+                data={item.data}
+              />
             );
           })}
         </div>
       ) : (
         <h1>waiting</h1>
       )}
-    </div>
+    </>
   );
 }
 
