@@ -34,6 +34,7 @@ function App() {
                 title={item.title}
                 secondary={item.secondary}
                 data={item.data}
+                val={item.usage}
               />
             );
           })}

@@ -66,3 +66,36 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+/*
+
+*/
+
+const GaugeChart = () => {
+  (function renderChart() {
+    c3.generate({
+      bindto: "#chart1",
+      data: {
+        columns: [["data", 8]],
+        type: "gauge",
+      },
+      color: {
+        pattern: ["#FF0000", "#F97600", "#F6C600", "#60B044"], // the three color levels for the percentage values.
+        threshold: {
+          values: [30, 60, 90, 100],
+        },
+      },
+      size: {
+        height: 180,
+      },
+    });
+  })();
+
+  return (
+    <div>
+      <div id="chart1"></div>
+    </div>
+  );
+};
+export default GaugeChart;
