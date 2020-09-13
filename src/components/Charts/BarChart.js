@@ -19,7 +19,7 @@ const BarChart = (props) => {
           },
         },
         size: {
-          height: 200,
+          height: 80,
         },
         axis: {
           y: {

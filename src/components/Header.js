@@ -3,10 +3,14 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <h2>Project Title</h2>
+      <p className="project-title">Project Title</p>
       <div className="button-container">
-        <button className="button teams">Teams</button>
-        <button className="button add-service">Add Service</button>
+        <button className="button teams" src="#">
+          Teams
+        </button>
+        <button className="button add-service" src="#">
+          Add Service
+        </button>
       </div>
     </div>
   );

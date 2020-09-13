@@ -7,6 +7,7 @@ body {
   padding: 0px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  background-color: #eeeeee;
 }
 
 h1 {
@@ -17,16 +18,20 @@ h2 {
   margin: 0px;
 }
 
+p {
+  margin: 0px;
+}
+
 .header {
   background-color: #eeeeee;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
   flex-direction: row;
   height: 50px;
-  width: 1200px;
-  margin: 20px 0px;
+  margin: 5px 0px;
+  padding: 0px 30px;
+  width: 1090px;
 }
 
 .main-container {
@@ -41,7 +46,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 450px;
+  width: 250px;
 }
 
 .tile {
@@ -49,34 +54,37 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: green;
+  background-color: white;
   width: 480px;
+  height: 90px;
+  border: 1px black dotted;
+  padding: 0px 20px;
 }
 
 .chart {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 80px;
+  width: 120px;
+  margin: 0px 10px 0px 0px;
 }
 
 .tile-information {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 120px;
+  width: 200px;
+  height: 90px;
 }
 
 .tile-container {
-  width: 1200px;
   display: grid;
   grid-template-columns: 50% 50%;
-  row-gap: 20px;
+  row-gap: 25px;
   column-gap: 20px;
   background-color: #ffffff;
   margin: 0px 0px 10px 0px;
-  padding: 50px 100px;
+  padding: 50px;
 }
 
 .add-service {
@@ -88,12 +96,11 @@ h2 {
 }
 
 .button {
-  width: 200px;
-  border-radius: 8px;
+  width: 120px;
+  height: 28px;
+  border-radius: 6px;
   color: white;
   border: 0;
-  padding: 10px 45px;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,4 +109,26 @@ h2 {
 .tile-icon {
   width: 50px;
   height: 50px;
+}
+
+.text {
+  font-weight: light;
+  color: gray;
+}
+
+.line-one {
+  font-weight: bolder;
+  color: black;
+}
+
+.project-title {
+  font-size: 20px;
+}
+
+.tile:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.button:hover {
+  box-shadow: 0 0 11px darkgray;
 }

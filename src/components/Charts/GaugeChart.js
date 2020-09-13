@@ -17,12 +17,13 @@ const GaugeChart = (props) => {
           },
         },
         size: {
-          height: 80,
+          height: 64,
         },
         gauge: {
           label: {
             show: false,
           },
+          width: 15,
         },
         legend: {
           show: false,

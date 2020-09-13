@@ -11,9 +11,9 @@ const Tile = (props) => {
         alt={`${props.type} icon`}
       />
       <div className="tile-information">
-        <h1>{props.title}</h1>
-        <h2>{props.secondary}</h2>
-        <h2>{props.data}</h2>
+        <p className="text line-one">{props.title}</p>
+        <p className="text line-two">{props.secondary}</p>
+        <p className="text line-three">{props.data}</p>
       </div>
       {props.type.toLowerCase().includes("network") ? (
         <BarChart val={props.val} />
