@@ -27,17 +27,19 @@ function App() {
       {fetched ? (
         <div className="main-container">
           <Header />
-          {data.map((item, index) => {
-            return (
-              <Tile
-                key={index}
-                title={item.title}
-                secondary={item.secondary}
-                data={item.data}
-                val={item.usage}
-              />
-            );
-          })}
+          <div className="tile-container">
+            {data.map((item, index) => {
+              return (
+                <Tile
+                  key={index}
+                  title={item.title}
+                  secondary={item.secondary}
+                  data={item.data}
+                  val={item.usage}
+                />
+              );
+            })}
+          </div>
         </div>
       ) : (
         <h1>waiting</h1>

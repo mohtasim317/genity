@@ -4,8 +4,10 @@
 
 body {
   margin: 0px;
+  padding: 0px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  background-color: red;
 }
 
 h1 {
@@ -20,16 +22,19 @@ h2 {
   background-color: purple;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 40px;
   flex-direction: row;
-  width: 100%;
   height: 50px;
+  width: 600px;
+  margin: 20px 0px;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: red;
 }
 
@@ -46,14 +51,14 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: green;
-  width: 100%;
+  width: 280px;
 }
 
 .chart {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100px;
+  width: 80px;
 }
 
 .tile-information {
@@ -62,4 +67,24 @@ h2 {
   align-items: center;
   justify-content: center;
   height: 120px;
+}
+
+.tile-container {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.add-service {
+  background-color: rgb(41, 146, 243);
+}
+
+.teams {
+  background-color: rgb(95, 124, 139);
+}
+
+.button {
+  border-radius: 10%;
 }
