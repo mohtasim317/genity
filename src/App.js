@@ -10,7 +10,6 @@ function App() {
     try {
       const info = await fetch(url);
       const parsed = await info.json();
-      console.log(parsed);
       updateFetched(true);
       updateData(parsed);
     } catch (err) {
@@ -36,6 +35,7 @@ function App() {
                   secondary={item.secondary}
                   data={item.data}
                   val={item.usage}
+                  type={item.type}
                 />
               );
             })}
