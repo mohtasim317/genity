@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div>
       {fetched ? (
         <div className="main-container">
           <Header />
@@ -49,7 +49,7 @@ function App() {
           <Spinner animation="grow" variant="warning" />
         </div>
       )}
-    </>
+    </div>
   );
 }
 
