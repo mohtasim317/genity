@@ -1,3 +1,5 @@
+You can find the project deployed at https://genity-dashboard.herokuapp.com/
+
 # Genity Dashboard
 
 ## Installation:
@@ -9,9 +11,4 @@ npm install
 npm run start
 ```
 
-The app should open up after npm start is entered.
-
-## Features
-
-- State Management using React Hooks
-- Dynamically renders dashboard tiles from fetched data, including dynamic rendering of charts and SVGs.
+The app will open after npm run start is entered.
