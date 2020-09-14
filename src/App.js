@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Tile from "./components/Tile";
+import Spinner from "react-bootstrap/Spinner";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [fetched, updateFetched] = useState(false);
@@ -42,7 +44,10 @@ function App() {
           </div>
         </div>
       ) : (
-        <h1>waiting</h1>
+        <div className="waiting">
+          <h1 className="waiting-text">Fetching from API</h1>
+          <Spinner animation="grow" variant="warning" />
+        </div>
       )}
     </>
   );

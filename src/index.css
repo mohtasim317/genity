@@ -114,6 +114,8 @@ p {
 .text {
   font-weight: light;
   color: gray;
+  padding: 0px;
+  margin: 0px;
 }
 
 .line-one {
@@ -131,4 +133,14 @@ p {
 
 .button:hover {
   box-shadow: 0 0 11px darkgray;
+}
+
+.waiting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.waiting-text {
+  margin: 0px 20px 0px 0px;
 }
