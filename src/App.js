@@ -4,7 +4,7 @@ import Tile from "./components/Tile";
 import Spinner from "react-bootstrap/Spinner";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+const App = () => {
   const [fetched, updateFetched] = useState(false);
   const [data, updateData] = useState([]);
 
@@ -51,6 +51,6 @@ function App() {
       )}
     </div>
   );
-}
+};
 
 export default App;
